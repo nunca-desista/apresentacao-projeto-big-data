@@ -6,9 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const editorialModules = {
+  visaogeral: {
+    title: "1. Visão Geral da Lavoura (Logado com Dados de Campo)",
+    desc: "Painel do produtor autenticado na nuvem com dados em tempo real. Exibe boas-vindas personalizadas, clima imediato (26,4 °C em Herval Seco/RS), resumo de fertilidade do solo (pH 5.8, 46% argila) e atalhos operacionais rápidos para o dia a dia da fazenda.",
+    benefits: [
+      "Ambiente autenticado seguro com dados persistentes na nuvem",
+      "Clima em tempo real com temperatura, umidade e vento da coordenada exata",
+      "Resumo físico de solo com indicação de argila e acidez",
+      "Acesso instantâneo com 1 clique para diagnósticos e talhões"
+    ],
+    image: "assets/isa-visao-geral-logado.png",
+    alt: "Visão Geral do AgroBig Data autenticado"
+  },
   areas: {
-    title: "1. Mapeamento Territorial & Áreas Salvas (Herval Seco & Brasil)",
-    desc: "Visualização e acompanhamento de talhões georreferenciados em qualquer ponto do país (como a demarcação em Herval Seco/RS e no Tocantins). Integração com satélite ESRI, polígonos livres, cálculo de área e camadas territoriais públicas.",
+    title: "2. Mapeamento Territorial & Áreas Salvas (Herval Seco & Brasil)",
+    desc: "A tela que você capturou mostrando a perspectiva completa do território. Permite pesquisar qualquer lugar do mundo por coordenadas ou endereço, demarcar polígonos, calcular hectares e acompanhar limites cadastrais com fotos de satélite em alta definição.",
     benefits: [
       "Busca universal por GPS, Latitude/Longitude ou Google Maps",
       "Demarcação livre e cálculo instantâneo em Hectares (ha)",
@@ -19,8 +31,8 @@ const editorialModules = {
     alt: "Módulo de Áreas e Mapa Territorial da ISA"
   },
   plantio: {
-    title: "2. Super Zoom 24x, Nível Topográfico & Linhas de Plantio",
-    desc: "Aproximação até a escala de metros sem perda de renderização. Permite traçar linhas de pulverização, simular passada de maquinário no GPS, gerar cabeceiras guiadas pelo relevo e exportar diretamente para KMZ.",
+    title: "3. Super Zoom 24x, Nível Topográfico & Linhas de Plantio",
+    desc: "A tela inteira do mapa que você registrou: aproximação máxima sem perda de nitidez, curvas de nível de relevo, cálculo de declividade e traçado das linhas de aplicação do pulverizador/trator com metragem exata por segmento.",
     benefits: [
       "Super Zoom Nível 24 com nitidez métrica no talhão",
       "Linhas de passada de trator com metragem exata por segmento",
@@ -30,9 +42,21 @@ const editorialModules = {
     image: "assets/linhas-de-plantio.png",
     alt: "Linhas de plantio e altimetria no Super Zoom da ISA"
   },
+  clima: {
+    title: "4. Clima, Chuva & Previsão Agrícola Horária",
+    desc: "Seu print oficial do módulo de Clima: gráficos hora a hora de temperatura, umidade relativa do ar, probabilidade de chuva e ventos nas próximas 24 horas e nos 7 dias seguintes, fundamentais para planejar janelas de pulverização.",
+    benefits: [
+      "Condições atuais: temperatura, umidade, vento e precipitação",
+      "Previsão hora a hora para planejar janelas de pulverização sem deriva",
+      "Previsão estendida de 7 a 14 dias com mínimas e máximas",
+      "Alertas técnicos de umidade e orvalho foliar"
+    ],
+    image: "assets/clima.png",
+    alt: "Previsão de clima e chuva na ISA"
+  },
   solo: {
-    title: "3. Solo & Manejo (ISRIC SoilGrids + Textura Granulométrica)",
-    desc: "A ciência da terra em detalhe. Gráfico em rodelas exclusivo da textura granulométrica (Areia, Argila e Silte) nas profundidades de 0-5 cm e 5-15 cm, composição química estimada (pH, carbono orgânico, CTC) e classificação textural.",
+    title: "5. Solo & Manejo (ISRIC SoilGrids + Textura Granulométrica)",
+    desc: "Seu print oficial do solo: gráfico em rodelas da textura física (Areia, Argila e Silte) nas profundidades de 0-5 cm e 5-15 cm, composição química estimada (pH, carbono orgânico, CTC) e classificação textural.",
     benefits: [
       "Gráfico em rodelas oficial da textura física do solo",
       "Classificação textural automatizada (ex: Franco-Argilo-Arenoso)",
@@ -43,8 +67,8 @@ const editorialModules = {
     alt: "Gráfico de textura do solo e composição química da ISA"
   },
   solotopo: {
-    title: "4. Solo Integrado com Altimetria e Topografia",
-    desc: "O solo analisado em conjunto com o relevo da propriedade. Avalie declividade, escoamento de água da chuva e capacidade de retenção de umidade correlacionando curvas de nível topográfico com a camada de solo.",
+    title: "6. Solo Integrado com Altimetria e Topografia",
+    desc: "Seu print de solo com topografia: cruzamento visual da textura do solo com as curvas de nível do terreno para entender escoamento de nutrientes e áreas com risco de erosão ou acúmulo de água.",
     benefits: [
       "Cruzamento de camadas de fertilidade com curvas de nível",
       "Identificação de manchas de erosão e declividade crítica",
@@ -55,8 +79,8 @@ const editorialModules = {
     alt: "Solo com curvas de nível e topografia na ISA"
   },
   novosolo: {
-    title: "5. Registro e Vínculo de Laudos Laboratoriais ao Talhão",
-    desc: "Conecte a estimativa científica aos resultados das análises químicas feitas no laboratório. Salve os dados de pH, argila e adubação diretamente dentro de cada talhão para acompanhar o histórico de calagem safra após safra.",
+    title: "7. Registro de Laudos Laboratoriais no Talhão",
+    desc: "Seu print de cadastro de novos laudos: formulário dedicado para vincular análises laboratoriais de pH, fósforo, potássio e micronutrientes a um talhão específico para histórico de fertilidade.",
     benefits: [
       "Formulário direto para entrada de laudos laboratoriais reais",
       "Vinculação dos resultados ao talhão selecionado",
@@ -66,21 +90,21 @@ const editorialModules = {
     image: "assets/salvar-dados-solo.png",
     alt: "Formulário de cadastro de solo por talhão"
   },
-  clima: {
-    title: "6. Clima, Chuva & Previsão Agrícola Horária",
-    desc: "Previsões meteorológicas calculadas pelo Open-Meteo para a coordenada exata da sua fazenda. Temperatura ao vivo, umidade do ar, vento, probabilidade de chuva hora a hora e alertas de janelas de aplicação de defensivos.",
+  mercado: {
+    title: "8. Mercado & Cotações Físicas de Commodities",
+    desc: "Acompanhamento transparente das cotações de Soja, Milho, Boi Gordo, Arroz e Feijão no Tocantins e praças nacionais, com gráfico de variação histórica e módulo para registrar vendas particulares da safra.",
     benefits: [
-      "Condições atuais: temperatura, umidade, vento e precipitação",
-      "Previsão hora a hora para planejar janelas de pulverização sem deriva",
-      "Previsão estendida de 7 a 14 dias com mínimas e máximas",
-      "Alertas técnicos de umidade e orvalho foliar"
+      "Cotações transparentes de praças agrícolas reais",
+      "Histórico com gráficos de tendência diária e semanal",
+      "Formulário para registrar vendas particulares da safra",
+      "Exportação e importação direta em planilhas CSV"
     ],
-    image: "assets/clima.png",
-    alt: "Previsão de clima e chuva na ISA"
+    image: "assets/isa-mercado-atual.png",
+    alt: "Módulo de mercado e cotações da ISA"
   },
   ia: {
-    title: "7. Assistente ISA · Triagem Fitossanitária com IA (Gemini)",
-    desc: "Inteligência artificial conversacional especializada em agronomia. Converse em linguagem natural sobre manejo, adubação e pragas ou envie fotos de folhas lesionadas para triagem preliminar com visão computacional.",
+    title: "9. Assistente ISA · Triagem e IA Multimodal (Gemini)",
+    desc: "Seu print oficial do assistente IA: interface limpa de conversa agronômica, com suporte a dúvidas de manejo integrado de pragas, calagem, defensivos e diagnóstico de fotos pelo Google Gemini.",
     benefits: [
       "Triagem de doenças e pragas por foto com o Google Gemini Vision",
       "Correlação do diagnóstico com o histórico climático recente do talhão",
@@ -91,8 +115,8 @@ const editorialModules = {
     alt: "Assistente de inteligência agronômica ISA"
   },
   personalizacao: {
-    title: "8. Personalização da Plataforma & Configurações",
-    desc: "Ajuste o sistema para a realidade da sua propriedade. Escolha o tema visual, configure o modo escuro, defina culturas prioritárias e mantenha seus registros sincronizados com total segurança e privacidade de dados.",
+    title: "10. Personalização da Plataforma & Configurações",
+    desc: "Seu print das preferências: escolha entre modo claro e escuro, ajuste de culturas acompanhadas e configurações de privacidade com armazenamento protegido.",
     benefits: [
       "Alternância fluida entre Modo Claro e Modo Escuro",
       "Personalização de temas e preferências regionais",
