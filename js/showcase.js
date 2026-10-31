@@ -1,33 +1,46 @@
-// ISA Editorial Showcase - Dynamic Tab Switcher with Real Platform Imagery
+// ISA Editorial Showcase - Dynamic Tab Switcher & Theme Customizer
 document.addEventListener('DOMContentLoaded', () => {
   initEditorialTabs();
+  initThemeCustomizer();
   lucide.createIcons();
 });
 
 const editorialModules = {
   mapas: {
     title: "Mapeamento Territorial & Super Zoom 24x (Herval Seco & Brasil)",
-    desc: "Demarcação precisa de talhões em Herval Seco (RS), Araguatins (TO) ou em qualquer coordenada do mundo. Conta com visualização de satélite em alta definição, geração de curvas de nível, declividade e ferramentas profissionais de corte, medição de hectares e exportação em KML/KMZ.",
+    desc: "Demarcação precisa de talhões em Herval Seco (RS), Araguatins (TO) ou em qualquer coordenada do mundo. Conta com satélite ESRI em escala de metros, curvas de nível topográfico, cálculo automático de hectares e geração de cabeceiras e tiros de pulverização com exportação para KMZ.",
     benefits: [
-      "Satélite ESRI de alta definição com Super Zoom Nível 24",
-      "Demarcação livre por GPS linear, polígonos e cálculo automático de área (ha)",
+      "Satélite ESRI de alta resolução com Super Zoom Nível 24",
+      "Demarcação poligonal livre e cálculo automático de área (ha)",
       "Recorte e geração de cabeceiras e linhas de pulverização",
       "Exportação nativa em arquivos KMZ e KML para Google Earth e maquinário"
     ],
     image: "assets/isa-mapas-herval.png",
-    alt: "Módulo de mapas, satélite e operações do AgroBig Data"
+    alt: "Módulo de mapas e satélite do AgroBig Data"
   },
   dashboard: {
     title: "Painel Executivo da Lavoura em Tempo Real",
-    desc: "A visão unificada das operações de campo. Clima imediato com dados do Open-Meteo, umidade relativa do ar, cotações de commodities físicas e alertas técnicos de manejo sem cliques desnecessários.",
+    desc: "A visão unificada das operações de campo. Clima imediato com dados do Open-Meteo, umidade relativa do ar, cotações de commodities físicas e alertas técnicos de manejo sem ruídos visuais ou telas vazias.",
     benefits: [
       "Métricas em tempo real integradas com Open-Meteo e estações",
       "Resumo da condição da lavoura e índices hídricos",
       "Acesso direto com 1 clique para diagnósticos e solo",
-      "Histórico com sincronização em nuvem e persistência local"
+      "Histórico com sincronização em nuvem e persistência de login"
     ],
-    image: "assets/desktop.jpg",
+    image: "assets/isa-dashboard-atual.png",
     alt: "Painel executivo da plataforma ISA"
+  },
+  clima: {
+    title: "Clima, Chuva & Janelas de Pulverização",
+    desc: "Previsões meteorológicas de alta resolução com histórico horário, acumulados de precipitação e alertas técnicos de vento seguro para pulverização e colheita calculados para a coordenada exata da sua fazenda.",
+    benefits: [
+      "Leitura ao vivo: temperatura, sensação térmica, umidade e vento",
+      "Previsão hora a hora para planejar janelas de defensivos agrícolas",
+      "Previsão estendida de 7 a 14 dias com mínimas e máximas",
+      "Cálculo de probabilidade de orvalho e deriva de vento"
+    ],
+    image: "assets/isa-clima-atual.png",
+    alt: "Previsão do tempo e clima da ISA"
   },
   solo: {
     title: "Solo & Manejo (ISRIC SoilGrids + Textura em Rodelas)",
@@ -93,6 +106,18 @@ function initEditorialTabs() {
       imgEl.alt = data.alt;
 
       lucide.createIcons();
+    });
+  });
+}
+
+function initThemeCustomizer() {
+  const themeBtns = document.querySelectorAll('.theme-btn');
+  themeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      themeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const theme = btn.getAttribute('data-theme-name');
+      document.body.setAttribute('data-theme', theme);
     });
   });
 }
