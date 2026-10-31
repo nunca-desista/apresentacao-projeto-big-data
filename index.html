@@ -4,345 +4,346 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ISA · AgroBig Data | Ecossistema Oficial de Inteligência Agrícola</title>
-  <meta name="description" content="Apresentação interativa do Projeto ISA (AgroBig Data - IFTO Campus Araguatins). Sensoriamento remoto, IA agronômica, análise de solo e cotações para o produtor rural.">
+  <meta name="description" content="Plataforma de inteligência agronômica de precisão desenvolvida pelo IFTO Campus Araguatins. Mapas de satélite, dados de solo ISRIC, IA generativa e cotações.">
   <link rel="icon" href="assets/brand-mark.svg" type="image/svg+xml">
 
-  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Plus Jakarta Sans, Instrument Serif, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Stylesheet -->
+  <!-- Editorial Agritech Stylesheet -->
   <link rel="stylesheet" href="css/showcase.css">
 </head>
 <body>
 
-  <!-- Top Glass Navigation Bar -->
-  <header class="main-header">
-    <a href="#" class="brand-wrapper">
-      <img src="assets/brand-mark.svg" alt="ISA Brand Mark" class="brand-logo">
-      <div class="brand-title">isa<span>.</span>agro</div>
-      <div class="brand-badge">OFICIAL · IFTO</div>
-    </a>
+  <!-- Floating Clean Header (Escape & Landscape Style) -->
+  <header class="site-header">
+    <div class="header-pill">
+      <a href="#" class="brand-box">
+        <img src="assets/brand-mark.svg" alt="ISA Brand Mark">
+        <b>isa<span>.</span>agro</b>
+      </a>
 
-    <nav class="main-nav">
-      <a href="#modulos">Módulos</a>
-      <a href="#diferenciais">Diferenciais Técnicos</a>
-      <a href="#canais">Canais de Acesso</a>
-      <a href="#ifto">Pesquisa & Ciência</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#plataforma">A Plataforma</a>
+        <a href="#diferenciais">Comparativo</a>
+        <a href="#ciencia">Ciência & IFTO</a>
+      </nav>
 
-    <div class="header-actions">
-      <a href="#modulos" class="btn btn-secondary">Explorar Demo</a>
-      <a href="#canais" class="btn btn-primary"><i data-lucide="smartphone"></i> Baixar App</a>
+      <a href="https://agro-big-data-ja4o-xi.vercel.app/" target="_blank" class="btn btn-lime" style="padding: 8px 18px; font-size: 0.85rem;">
+        Acessar Sistema <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Natural Farm Background (Zenze Inspired) -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-badge-wrap">
-        <i data-lucide="sparkles" style="width: 16px; height: 16px; color: var(--color-accent);"></i>
+    <div class="container hero-content">
+      <div class="hero-tag">
+        <i data-lucide="sprout" style="width: 16px; height: 16px;"></i>
         <span>AgroBig Data · IFTO Campus Araguatins</span>
       </div>
 
       <h1 class="hero-title">
-        Inteligência agronômica de precisão que <span class="gradient-text">aproxima você do seu campo</span>.
+        Cultivando a natureza. <br>
+        <span class="serif-italic">Capacitando o produtor rural.</span>
       </h1>
 
       <p class="hero-desc">
-        Muito além de previsões genéricas. O ecossistema ISA integra modelos globais de solo ISRIC, imagens de satélite para demarcação de talhões, IA generativa para triagem de pragas e cotações de mercado em tempo real.
+        A ISA conecta ciência agronômica, sensoriamento remoto por satélite, modelos globais de solo e inteligência artificial para transformar cada hectare da sua terra em decisões mais rentáveis e sustentáveis.
       </p>
 
-      <div class="hero-actions">
-        <a href="#modulos" class="btn btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
-          <i data-lucide="play-circle"></i> Explorar Módulos Interativos
+      <div class="hero-actions-row">
+        <a href="#plataforma" class="btn btn-lime">
+          Explorar Soluções <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
         </a>
-        <a href="#diferenciais" class="btn btn-secondary" style="padding: 14px 28px; font-size: 1.05rem;">
-          <i data-lucide="git-compare"></i> Comparar Tecnologia
+        <a href="https://agro-big-data-ja4o-xi.vercel.app/" target="_blank" class="btn btn-glass-light">
+          <i data-lucide="play-circle" style="width: 18px; height: 18px; color: var(--color-primary);"></i>
+          Ver Plataforma ao Vivo
         </a>
       </div>
 
-      <!-- Hero Device Frame Mockup -->
-      <div class="hero-mockup-wrapper">
-        <div class="hero-mockup-frame">
-          <div class="mockup-header-bar">
-            <div class="mockup-dots">
-              <span class="mockup-dot red"></span>
-              <span class="mockup-dot yellow"></span>
-              <span class="mockup-dot green"></span>
-            </div>
-            <div class="mockup-url-pill">
-              <i data-lucide="lock" style="width: 12px; height: 12px; color: #22C55E;"></i>
-              <span>isa-agrobigdata.ifto.edu.br/app/dashboard</span>
-            </div>
-            <div style="font-size: 0.75rem; color: #95A59D;">Ambiente ao Vivo</div>
+      <!-- Live Floating Insights Cards (Zenze Style) -->
+      <div class="hero-floating-grid">
+        <div class="hero-stat-item">
+          <div class="stat-icon"><i data-lucide="map-pin"></i></div>
+          <div>
+            <div class="stat-number">GPS Livre</div>
+            <div class="stat-label">Sem cidades travadas</div>
           </div>
+        </div>
 
-          <div class="mockup-body">
-            <!-- Sidebar Inside Mockup -->
-            <div class="mockup-sidebar">
-              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; padding: 0 4px;">
-                <img src="assets/brand-mark.svg" alt="ISA" style="width: 24px; height: 24px;">
-                <b style="font-size: 0.95rem; color: #fff;">isa.</b>
-                <small style="color: #34D399; font-size: 0.65rem; background: rgba(34,197,94,0.15); padding: 1px 6px; border-radius: 4px;">PROD</small>
-              </div>
+        <div class="hero-stat-item">
+          <div class="stat-icon"><i data-lucide="layers-2"></i></div>
+          <div>
+            <div class="stat-number">ISRIC Soil</div>
+            <div class="stat-label">Areia, Argila & Silte</div>
+          </div>
+        </div>
 
-              <div class="mockup-nav-item active"><i data-lucide="layout-dashboard"></i> Visão Geral</div>
-              <div class="mockup-nav-item"><i data-lucide="map"></i> Áreas e Mapa</div>
-              <div class="mockup-nav-item"><i data-lucide="layers-2"></i> Solo e Manejo</div>
-              <div class="mockup-nav-item"><i data-lucide="cloud-sun"></i> Clima e Chuva</div>
-              <div class="mockup-nav-item"><i data-lucide="sparkles"></i> Assistente IA</div>
-              <div class="mockup-nav-item"><i data-lucide="trending-up"></i> Mercado</div>
+        <div class="hero-stat-item">
+          <div class="stat-icon"><i data-lucide="sparkles"></i></div>
+          <div>
+            <div class="stat-number">Gemini Vision</div>
+            <div class="stat-label">Triagem de Pragas por Foto</div>
+          </div>
+        </div>
 
-              <div style="margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.72rem; color: #5D7267;">
-                <i data-lucide="shield-check" style="width: 14px; height: 14px; vertical-align: middle; color: #34D399;"></i> IFTO Campus Araguatins
-              </div>
-            </div>
-
-            <!-- Content Inside Mockup -->
-            <div class="mockup-content">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <div>
-                  <h3 style="font-size: 1.35rem; font-weight: 800; color: #fff;">Painel do Produtor Rural</h3>
-                  <span style="font-size: 0.8rem; color: #95A59D;">Talhão Principal #01 · Soja BRS · Coordenadas GPS Ativas</span>
-                </div>
-                <div style="display: flex; gap: 8px;">
-                  <span style="background: rgba(34,197,94,0.12); color: #34D399; border: 1px solid rgba(34,197,94,0.25); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600;">
-                    <i data-lucide="wifi" style="width: 12px; height: 12px; vertical-align: middle;"></i> Sensores Online
-                  </span>
-                </div>
-              </div>
-
-              <!-- Top metrics cards in hero mock -->
-              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px;">
-                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
-                  <span style="font-size: 0.72rem; color: #95A59D; text-transform: uppercase;">Temperatura Campo</span>
-                  <div style="font-size: 1.6rem; font-weight: 800; color: #fff; margin: 4px 0;">31,8 °C</div>
-                  <span style="font-size: 0.75rem; color: #34D399;">Sensação 35,4 °C</span>
-                </div>
-                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
-                  <span style="font-size: 0.72rem; color: #95A59D; text-transform: uppercase;">Umidade Relativa</span>
-                  <div style="font-size: 1.6rem; font-weight: 800; color: #60A5FA; margin: 4px 0;">68%</div>
-                  <span style="font-size: 0.75rem; color: #95A59D;">Pico de orvalho 22h</span>
-                </div>
-                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
-                  <span style="font-size: 0.72rem; color: #95A59D; text-transform: uppercase;">pH Solo (ISRIC)</span>
-                  <div style="font-size: 1.6rem; font-weight: 800; color: #F59E0B; margin: 4px 0;">6,1</div>
-                  <span style="font-size: 0.75rem; color: #F59E0B;">Acidez média · Calagem OK</span>
-                </div>
-                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
-                  <span style="font-size: 0.72rem; color: #95A59D; text-transform: uppercase;">Soja (Saca 60kg)</span>
-                  <div style="font-size: 1.6rem; font-weight: 800; color: #34D399; margin: 4px 0;">R$ 131,50</div>
-                  <span style="font-size: 0.75rem; color: #34D399;">+1,4% na semana</span>
-                </div>
-              </div>
-
-              <!-- Quick action preview banner -->
-              <div style="background: linear-gradient(135deg, rgba(21,77,55,0.4) 0%, rgba(13,122,77,0.2) 100%); border: 1px solid rgba(34,197,94,0.3); border-radius: 14px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between;">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(34,197,94,0.2); display: flex; align-items: center; justify-content: center; color: #34D399;">
-                    <i data-lucide="scan-line"></i>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 1rem; font-weight: 700; color: #fff;">Triagem Fitossanitária com IA Ativa</h4>
-                    <p style="font-size: 0.82rem; color: #95A59D;">Envie uma foto de folha ou tire dúvidas agronômicas diretamente com o modelo treinado.</p>
-                  </div>
-                </div>
-                <span class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">Iniciar Diagnóstico</span>
-              </div>
-
-            </div>
+        <div class="hero-stat-item">
+          <div class="stat-icon"><i data-lucide="trending-up"></i></div>
+          <div>
+            <div class="stat-number">Cotações TO</div>
+            <div class="stat-label">Soja, Milho & Arroz</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Modules Section -->
-  <section id="modulos" style="padding: 90px 0;">
+  <!-- Institutions & Scientific Sources Strip -->
+  <div class="partners-strip">
+    <div class="container partners-content">
+      <div class="partner-item"><i data-lucide="graduation-cap"></i> IFTO Campus Araguatins</div>
+      <div class="partner-item"><i data-lucide="database"></i> ISRIC World Soil Information</div>
+      <div class="partner-item"><i data-lucide="cloud-sun"></i> Open-Meteo Weather APIs</div>
+      <div class="partner-item"><i data-lucide="satellite"></i> ESRI World Imagery</div>
+      <div class="partner-item"><i data-lucide="cpu"></i> Google Gemini Multimodal</div>
+    </div>
+  </div>
+
+  <!-- Bento Photo Gallery (Landscape Style) -->
+  <section class="gallery-showcase" id="solucoes">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">A ARQUITETURA COMPLETA</span>
-        <h2 class="section-title">Explore cada módulo do ecossistema ISA</h2>
-        <p class="section-desc">Clique nos botões abaixo para ver em tempo real como cada ferramenta foi projetada cientificamente para resolver as reais dores do homem do campo.</p>
+      <div class="section-head">
+        <span class="section-tag">A FORÇA DA TERRA & DADOS</span>
+        <h2 class="section-title">Tecnologia desenvolvida onde o agro realmente acontece</h2>
+        <p class="section-subtitle">Combinamos a força do trabalho no campo com a precisão do sensoriamento remoto de ponta a ponta.</p>
       </div>
 
-      <!-- Tabs Bar -->
-      <div class="module-tabs">
-        <button class="module-tab-btn active" data-module="dashboard"><i data-lucide="layout-dashboard"></i> 1. Dashboard</button>
-        <button class="module-tab-btn" data-module="mapa"><i data-lucide="map"></i> 2. Áreas & Mapa</button>
-        <button class="module-tab-btn" data-module="solo"><i data-lucide="layers-2"></i> 3. Solo e Manejo</button>
-        <button class="module-tab-btn" data-module="clima"><i data-lucide="cloud-sun"></i> 4. Clima e Chuva</button>
-        <button class="module-tab-btn" data-module="ia"><i data-lucide="sparkles"></i> 5. Assistente IA</button>
-        <button class="module-tab-btn" data-module="mercado"><i data-lucide="trending-up"></i> 6. Mercado</button>
-      </div>
-
-      <!-- Viewer Card -->
-      <div class="glass-panel module-viewer-card">
-        <div class="module-info">
-          <h3 id="moduleDetailTitle">1. Visão Geral & Dashboard do Produtor</h3>
-          <p id="moduleDetailDesc">Painel unificado que consolida o status da lavoura em tempo real. Sem cliques perdidos: reúne clima imediato, alertas de manejo, índices de solo e cotações da praça local com foco na tomada de decisão.</p>
-          
-          <div class="feature-pill-list" id="moduleFeatureList">
-            <div class="feature-pill-item"><i data-lucide="check-circle-2"></i> <span>Visão executiva com cumprimento personalizado e dados de GPS do talhão</span></div>
-            <div class="feature-pill-item"><i data-lucide="check-circle-2"></i> <span>Indicadores vitais de balanço hídrico, umidade foliar e temperatura</span></div>
-            <div class="feature-pill-item"><i data-lucide="check-circle-2"></i> <span>Grade de acesso rápido com 1 clique para diagnósticos e solo</span></div>
-            <div class="feature-pill-item"><i data-lucide="check-circle-2"></i> <span>Resumo das cotações físicas da região com tendência percentual</span></div>
+      <div class="bento-photo-grid">
+        <div class="photo-card tall">
+          <img src="assets/field-aerial.jpg" alt="Vista aérea de talhões agrícolas">
+          <div class="photo-overlay">
+            <h4>Mapeamento Territorial Real</h4>
+            <p>Demarcação poligonal e cálculo em hectares sobre satélite em alta definição.</p>
           </div>
-
-          <a href="#canais" class="btn btn-secondary"><i data-lucide="external-link"></i> Experimentar na Prática</a>
         </div>
 
-        <div class="module-interactive-frame" id="moduleInteractiveFrame">
-          <!-- Initial content loaded via showcase.js -->
+        <div class="photo-card wide">
+          <img src="assets/farmer-tech.jpg" alt="Produtor com tablet no campo">
+          <div class="photo-overlay">
+            <h4>Dados na Palma da Mão</h4>
+            <p>Ambiente intuitivo e leve adaptado para computadores, celulares e conexão de campo.</p>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <img src="assets/soil-hand.jpg" alt="Mãos segurando terra fértil">
+          <div class="photo-overlay">
+            <h4>Análise e Textura de Solo</h4>
+            <p>Compreenda a fração de argila, areia e retenção de umidade por talhão.</p>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <img src="assets/tractor-harvest.jpg" alt="Trator operando na colheita">
+          <div class="photo-overlay">
+            <h4>Janelas Operacionais</h4>
+            <p>Previsão climática hora a hora para pulverização e colheita sem desperdícios.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technical Comparison Table -->
-  <section id="diferenciais" style="padding: 80px 0;">
+  <!-- Laptop & Platform Showcase (AgriSmart Style) -->
+  <section class="platform-experience" id="plataforma">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">MATURIDADE TECNOLÓGICA</span>
-        <h2 class="section-title">O que separa a ISA de cópias superficiais</h2>
-        <p class="section-desc">Entenda por que a ISA é um verdadeiro sistema de apoio à decisão agronômica, com bases de dados científicas e engenharia de software de ponta.</p>
-      </div>
+      <div class="experience-wrap">
+        <div class="experience-text">
+          <span class="hero-tag" style="background: rgba(163,230,53,0.15); color: #A3E635;">
+            <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i> Sistema Homologado
+          </span>
+          <h3>Agricultura mais inteligente para um <span>futuro sustentável</span>.</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.6;">
+            A ISA consolida todas as frentes essenciais do seu negócio rural em uma interface limpa, rápida e sem poluição visual. Sem telas vazias ou cliques desnecessários.
+          </p>
 
-      <div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>Capacidade Agronômica</th>
-              <th>Clones & Cópias Superficiais</th>
-              <th>Plataforma Original ISA (AgroBig Data)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="feature-name">Localização & GPS</td>
-              <td class="clone-col">❌ Cidades fixas travadas em combobox (sede municipal a km de distância).</td>
-              <td class="isa-col">✔️ GPS do celular, busca por Latitude/Longitude, endereço e Google Maps.</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Mapeamento de Território</td>
-              <td class="clone-col">❌ Sem mapa, ou imagens estáticas sem interação.</td>
-              <td class="isa-col">✔️ Satélite Leaflet/ESRI, demarcação e desenho de polígonos com cálculo de área em ha.</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Ciência do Solo</td>
-              <td class="clone-col">❌ Totalmente ausente; não avalia terra ou granulometria.</td>
-              <td class="isa-col">✔️ Modelo global ISRIC SoilGrids com textura em rodelas (Argila/Areia/Silte) e química.</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Inteligência Artificial (IA)</td>
-              <td class="clone-col">❌ Textos pré-escritos com regras fixas ("sem serviço de linguagem").</td>
-              <td class="isa-col">✔️ LLM Multimodal (Google Gemini) para chat agronômico e triagem por foto de folha.</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Multiplataforma</td>
-              <td class="clone-col">❌ Apenas página Web simples com tours de passos vazios.</td>
-              <td class="isa-col">✔️ Web App + Aplicativo Android Nativo (Jetpack Compose) + Assistente WhatsApp.</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Cotações de Mercado</td>
-              <td class="clone-col">❌ Valores fictícios sem permitir registro ou exportação.</td>
-              <td class="isa-col">✔️ Séries reais de commodities, registro de vendas particulares e exportação CSV.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Multichannel Access Section -->
-  <section id="canais" style="padding: 90px 0;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">ACESSO EM QUALQUER LUGAR</span>
-        <h2 class="section-title">Onde o produtor estiver, a ISA está presente</h2>
-        <p class="section-desc">Desenvolvida para o campo: com ou sem sinal estável, em 3 frentes coordenadas.</p>
-      </div>
-
-      <div class="multichannel-grid">
-        <!-- Web Card -->
-        <div class="glass-panel channel-card">
-          <div>
-            <div class="channel-icon-wrap web"><i data-lucide="globe"></i></div>
-            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 12px;">Web Plataforma Completa</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Acesso robusto para gestão da fazenda, escritório agrícola, relatórios detalhados, exportação KML e laudos laboratoriais de solo.</p>
+          <div class="experience-checklist">
+            <div class="check-item">
+              <span class="check-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+              <span>Monitoramento de campo e lavoura em tempo real</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+              <span>Recomendações e triagem fitossanitária impulsionada por IA</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+              <span>Sensores de satélite e dados de clima de alta resolução</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></span>
+              <span>Fácil de usar na web, app Android nativo e WhatsApp</span>
+            </div>
           </div>
-          <a href="#modulos" class="btn btn-secondary"><i data-lucide="arrow-right"></i> Acessar Painel Web</a>
-        </div>
 
-        <!-- Android Card -->
-        <div class="glass-panel channel-card" style="border-color: rgba(34, 197, 94, 0.4); box-shadow: var(--shadow-glow);">
-          <div>
-            <div class="channel-icon-wrap android"><i data-lucide="smartphone"></i></div>
-            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 12px;">App Android Nativo (APK)</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Construído em Kotlin + Jetpack Compose. Utiliza a câmera para fotografar pragas e o GPS de precisão do aparelho diretamente no talhão.</p>
-          </div>
-          <button class="btn btn-primary" onclick="alert('O instalador APK oficial do Projeto ISA pode ser gerado a partir do módulo nativo Kotlin!')">
-            <i data-lucide="download"></i> Baixar APK Android
-          </button>
-        </div>
-
-        <!-- WhatsApp Card -->
-        <div class="glass-panel channel-card">
-          <div>
-            <div class="channel-icon-wrap whatsapp"><i data-lucide="message-circle"></i></div>
-            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 12px;">Assistente no WhatsApp</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Consultas ultra-rápidas para quando você está na estrada ou com conexão limitada: consulte chuva do dia e preços da saca com uma mensagem.</p>
-          </div>
-          <a href="https://wa.me/?text=Olá%20ISA,%20gostaria%20de%20consultar%20as%20condições%20do%20meu%20campo" target="_blank" class="btn btn-secondary">
-            <i data-lucide="send"></i> Chamar no WhatsApp
+          <a href="https://agro-big-data-ja4o-xi.vercel.app/" target="_blank" class="btn btn-lime">
+            Conhecer Plataforma ISA <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
           </a>
         </div>
+
+        <!-- Laptop Screen Mockup with Real Platform Screenshot -->
+        <div class="laptop-mockup-frame">
+          <div class="laptop-camera"></div>
+          <div class="laptop-screen-content">
+            <img src="assets/desktop.jpg" alt="Tela do Sistema ISA AgroBig Data">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Institutional / Footer Section -->
-  <footer class="main-footer" id="ifto">
-    <div class="footer-content">
-      <div>
-        <div class="brand-wrapper" style="margin-bottom: 16px;">
-          <img src="assets/brand-mark.svg" alt="ISA Logo" class="brand-logo">
-          <div class="brand-title">isa<span>.</span>agro</div>
+  <!-- Detailed Interactive Modules (Tabs with Real System Screenshots) -->
+  <section class="interactive-modules">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">RECURSOS EM DETALHE</span>
+        <h2 class="section-title">Conheça cada módulo que compõe a ISA</h2>
+        <p class="section-subtitle">Clique nas abas abaixo para visualizar as telas reais e as capacidades do ecossistema.</p>
+      </div>
+
+      <div class="module-nav-pills">
+        <button class="module-pill-btn active" data-tab="mapas"><i data-lucide="map"></i> 1. Áreas & Satélite</button>
+        <button class="module-pill-btn" data-tab="dashboard"><i data-lucide="layout-dashboard"></i> 2. Visão Geral</button>
+        <button class="module-pill-btn" data-tab="solo"><i data-lucide="layers-2"></i> 3. Solo & Manejo</button>
+        <button class="module-pill-btn" data-tab="mercado"><i data-lucide="trending-up"></i> 4. Mercado & Cotações</button>
+        <button class="module-pill-btn" data-tab="ia"><i data-lucide="sparkles"></i> 5. Assistente IA</button>
+      </div>
+
+      <div class="module-display-card">
+        <div class="module-info-col">
+          <h3 id="modTitle">Mapeamento Territorial & Curvas de Nível</h3>
+          <p id="modDesc">Demarcação de talhões com precisão de satélite, curvas de altitude topográfica e cálculo automático de área em hectares. Sem limites municipais pré-definidos: selecione qualquer coordenada geográfica ou importe arquivos KML.</p>
+
+          <ul class="module-benefits" id="modBenefits">
+            <li><i data-lucide="check-circle-2"></i> <span>Satélite ESRI de alta resolução com zoom irrestrito</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Ferramenta de polígono com medição de perímetro e área em tempo real</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Vínculo imediato com laudos de solo para cada talhão salvo</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span>Exportação nativa em formatos abertos KML e GeoJSON</span></li>
+          </ul>
+
+          <a href="https://agro-big-data-ja4o-xi.vercel.app/" target="_blank" class="btn btn-dark" style="align-self: flex-start;">
+            Ver no Sistema <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+          </a>
         </div>
-        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 420px; line-height: 1.6;">
-          Projeto de Pesquisa, Desenvolvimento e Inovação do <strong>IFTO Campus Araguatins</strong>. Ciência de dados, sensoriamento e inteligência artificial a serviço do agronegócio sustentável e da agricultura familiar no Tocantins.
-        </p>
-      </div>
 
-      <div>
-        <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">Fontes & Ciência</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-muted);">
-          <li>ISRIC - World Soil Information</li>
-          <li>Open-Meteo High Resolution Weather</li>
-          <li>Google DeepMind / Gemini Vision</li>
-          <li>ESRI Satellite Imagery & Leaflet</li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em;">Contato & Pesquisa</h4>
-        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">IFTO Campus Araguatins - TO</p>
-        <p style="font-size: 0.88rem; color: var(--text-highlight);">luiz.fischer@estudante.ifto.edu.br</p>
+        <div class="module-preview-col">
+          <div class="preview-media-box">
+            <img id="modImage" src="assets/isa-mapas-operacoes.png" alt="Módulo do Sistema">
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <span>© 2026 ISA · AgroBig Data. Todos os direitos reservados.</span>
-      <span>Desenvolvido com rigor agronômico e design de alto impacto.</span>
+  <!-- Technical Comparison (Original vs Superficial Clones) -->
+  <section class="comparison-section" id="diferenciais">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">RIGOR CIENTÍFICO</span>
+        <h2 class="section-title">O que diferencia a ISA de clones e protótipos</h2>
+        <p class="section-subtitle">Entenda por que a ISA é um ecossistema produtivo e não apenas um mock demonstrativo.</p>
+      </div>
+
+      <table class="clean-table">
+        <thead>
+          <tr>
+            <th>Capacidade Agrícola</th>
+            <th>Projetos e Clones Genéricos</th>
+            <th>Plataforma Original ISA (AgroBig Data)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-diff">Localização & Coordenadas</td>
+            <td class="col-clone">❌ Cidades fixas travadas em combobox (Palmas, Gurupi etc.) a dezenas de km da fazenda.</td>
+            <td class="col-isa">✔️ GPS real do celular, busca por Latitude/Longitude livre, endereço ou Google Maps.</td>
+          </tr>
+          <tr>
+            <td class="col-diff">Mapeamento de Talhões</td>
+            <td class="col-clone">❌ Sem mapa interativo ou imagens estáticas sem ferramentas.</td>
+            <td class="col-isa">✔️ Satélite Leaflet/ESRI, desenho de polígonos, cálculo de hectares e exportação KML.</td>
+          </tr>
+          <tr>
+            <td class="col-diff">Ciência do Solo</td>
+            <td class="col-clone">❌ Totalmente ausente; não analisa textura ou fertilidade.</td>
+            <td class="col-isa">✔️ Modelo global ISRIC SoilGrids com textura granulométrica em rodelas e química.</td>
+          </tr>
+          <tr>
+            <td class="col-diff">Inteligência Artificial (IA)</td>
+            <td class="col-clone">❌ Textos fixos pré-programados com regras simples de if/else ("sem serviço de linguagem").</td>
+            <td class="col-isa">✔️ LLM Multimodal (Google Gemini) para chat técnico e diagnóstico de pragas por foto de folha.</td>
+          </tr>
+          <tr>
+            <td class="col-diff">Multiplataforma</td>
+            <td class="col-clone">❌ Apenas página Web simples com passos repetitivos.</td>
+            <td class="col-isa">✔️ Web App + Aplicativo Android Nativo (Kotlin/Compose) + Assistente WhatsApp.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Clean Footer (IFTO & Science) -->
+  <footer class="clean-footer" id="ciencia">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-box" style="margin-bottom: 20px; color: #fff;">
+            <img src="assets/brand-mark.svg" alt="ISA" style="filter: brightness(0) invert(1);">
+            <b style="font-size: 1.4rem;">isa<span>.</span>agro</b>
+          </div>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; max-width: 440px; line-height: 1.6;">
+            Projeto de Pesquisa, Extensão e Inovação Tecnológica do <strong>IFTO Campus Araguatins</strong>. Ciência de dados, sensoriamento remoto e inteligência artificial a serviço do agronegócio e da agricultura familiar no estado do Tocantins.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; color: #A3E635;">Bases de Dados</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: rgba(255,255,255,0.7);">
+            <li>ISRIC - World Soil Information</li>
+            <li>Open-Meteo High Resolution</li>
+            <li>Google Gemini Multimodal Vision</li>
+            <li>ESRI World Imagery & Leaflet</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; color: #A3E635;">Contato & Projeto</h4>
+          <p style="font-size: 0.88rem; color: rgba(255,255,255,0.7); margin-bottom: 8px;">IFTO Campus Araguatins - TO</p>
+          <p style="font-size: 0.88rem; color: #A3E635;">luiz.fischer@estudante.ifto.edu.br</p>
+          <div style="margin-top: 20px;">
+            <a href="https://agro-big-data-ja4o-xi.vercel.app/" target="_blank" class="btn btn-lime" style="padding: 8px 16px; font-size: 0.82rem;">
+              Entrar no AgroBig Data
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <span>© 2026 ISA · AgroBig Data (IFTO Campus Araguatins). Todos os direitos reservados.</span>
+        <span>Ciência a serviço do campo.</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Main JS -->
   <script src="js/showcase.js"></script>
 </body>
 </html>
