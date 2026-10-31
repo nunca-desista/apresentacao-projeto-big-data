@@ -1,9 +1,11 @@
 // ISA Interactive Showcase Engine
 document.addEventListener('DOMContentLoaded', () => {
   initModuleTabs();
-  initSoilChart();
-  initClimaChart();
-  initChatDemo();
+  // Select first tab by default
+  const firstTab = document.querySelector('.module-tab-btn[data-module="dashboard"]');
+  if (firstTab) {
+    firstTab.click();
+  }
   lucide.createIcons();
 });
 
