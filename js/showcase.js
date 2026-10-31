@@ -6,77 +6,101 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const editorialModules = {
-  mapas: {
-    title: "Mapeamento Territorial & Super Zoom 24x (Herval Seco & Brasil)",
-    desc: "Demarcação precisa de talhões em Herval Seco (RS), Araguatins (TO) ou em qualquer coordenada do mundo. Conta com satélite ESRI em escala de metros, curvas de nível topográfico, cálculo automático de hectares e geração de cabeceiras e tiros de pulverização com exportação para KMZ.",
+  areas: {
+    title: "1. Mapeamento Territorial & Áreas Salvas (Herval Seco & Brasil)",
+    desc: "Visualização e acompanhamento de talhões georreferenciados em qualquer ponto do país (como a demarcação em Herval Seco/RS e no Tocantins). Integração com satélite ESRI, polígonos livres, cálculo de área e camadas territoriais públicas.",
     benefits: [
-      "Satélite ESRI de alta resolução com Super Zoom Nível 24",
-      "Demarcação poligonal livre e cálculo automático de área (ha)",
-      "Recorte e geração de cabeceiras e linhas de pulverização",
-      "Exportação nativa em arquivos KMZ e KML para Google Earth e maquinário"
+      "Busca universal por GPS, Latitude/Longitude ou Google Maps",
+      "Demarcação livre e cálculo instantâneo em Hectares (ha)",
+      "Vínculo imediato de cada talhão com a análise de solo daquela terra",
+      "Exportação nativa em arquivos KML para GPS agrícola"
     ],
-    image: "assets/isa-mapas-herval.png",
-    alt: "Módulo de mapas e satélite do AgroBig Data"
+    image: "assets/areas.png",
+    alt: "Módulo de Áreas e Mapa Territorial da ISA"
   },
-  dashboard: {
-    title: "Painel Executivo da Lavoura em Tempo Real",
-    desc: "A visão unificada das operações de campo. Clima imediato com dados do Open-Meteo, umidade relativa do ar, cotações de commodities físicas e alertas técnicos de manejo sem ruídos visuais ou telas vazias.",
+  plantio: {
+    title: "2. Super Zoom 24x, Nível Topográfico & Linhas de Plantio",
+    desc: "Aproximação até a escala de metros sem perda de renderização. Permite traçar linhas de pulverização, simular passada de maquinário no GPS, gerar cabeceiras guiadas pelo relevo e exportar diretamente para KMZ.",
     benefits: [
-      "Métricas em tempo real integradas com Open-Meteo e estações",
-      "Resumo da condição da lavoura e índices hídricos",
-      "Acesso direto com 1 clique para diagnósticos e solo",
-      "Histórico com sincronização em nuvem e persistência de login"
+      "Super Zoom Nível 24 com nitidez métrica no talhão",
+      "Linhas de passada de trator com metragem exata por segmento",
+      "Simulação de percurso e abatimento de área aplicada",
+      "Compatibilidade direta com Google Earth e pilotos automáticos"
     ],
-    image: "assets/isa-dashboard-atual.png",
-    alt: "Painel executivo da plataforma ISA"
-  },
-  clima: {
-    title: "Clima, Chuva & Janelas de Pulverização",
-    desc: "Previsões meteorológicas de alta resolução com histórico horário, acumulados de precipitação e alertas técnicos de vento seguro para pulverização e colheita calculados para a coordenada exata da sua fazenda.",
-    benefits: [
-      "Leitura ao vivo: temperatura, sensação térmica, umidade e vento",
-      "Previsão hora a hora para planejar janelas de defensivos agrícolas",
-      "Previsão estendida de 7 a 14 dias com mínimas e máximas",
-      "Cálculo de probabilidade de orvalho e deriva de vento"
-    ],
-    image: "assets/isa-clima-atual.png",
-    alt: "Previsão do tempo e clima da ISA"
+    image: "assets/linhas-de-plantio.png",
+    alt: "Linhas de plantio e altimetria no Super Zoom da ISA"
   },
   solo: {
-    title: "Solo & Manejo (ISRIC SoilGrids + Textura em Rodelas)",
-    desc: "A ciência da terra na escala da sua fazenda. O modelo global ISRIC SoilGrids correlaciona o ponto geográfico com a fração exata de Areia, Argila e Silte, apresentando gráfico em rodelas, química do solo e espaço para confrontar contra laudos laboratoriais reais.",
+    title: "3. Solo & Manejo (ISRIC SoilGrids + Textura Granulométrica)",
+    desc: "A ciência da terra em detalhe. Gráfico em rodelas exclusivo da textura granulométrica (Areia, Argila e Silte) nas profundidades de 0-5 cm e 5-15 cm, composição química estimada (pH, carbono orgânico, CTC) e classificação textural.",
     benefits: [
-      "Gráfico de granulometria em rodelas de 0-5 cm e 5-15 cm",
-      "Classificação textural automatizada (ex: Solo Argiloso / Franco)",
-      "Química estimada: pH em água, carbono orgânico e CTC efetiva",
-      "Módulo de calagem e histórico de fertilidade vinculado por talhão"
+      "Gráfico em rodelas oficial da textura física do solo",
+      "Classificação textural automatizada (ex: Franco-Argilo-Arenoso)",
+      "Estimativas de pH em água, matéria orgânica e CTC efetiva",
+      "Estimativa global calibrada pelo modelo ISRIC 250m"
     ],
-    image: "assets/solo-v31.jpg",
-    alt: "Módulo de análise de solo e textura ISRIC SoilGrids"
+    image: "assets/solo.png",
+    alt: "Gráfico de textura do solo e composição química da ISA"
   },
-  mercado: {
-    title: "Mercado & Cotações Físicas de Commodities",
-    desc: "Acompanhe as cotações físicas de Soja, Milho, Boi Gordo, Arroz e Feijão das principais praças brasileiras e do Tocantins. Visualize gráficos de linha históricos e registre suas próprias negociações fechadas na fazenda com exportação em CSV.",
+  solotopo: {
+    title: "4. Solo Integrado com Altimetria e Topografia",
+    desc: "O solo analisado em conjunto com o relevo da propriedade. Avalie declividade, escoamento de água da chuva e capacidade de retenção de umidade correlacionando curvas de nível topográfico com a camada de solo.",
     benefits: [
-      "Cotações transparentes de praças agrícolas reais",
-      "Histórico com gráficos de tendência diária e semanal",
-      "Formulário para registrar vendas particulares da safra",
-      "Exportação e importação direta em planilhas CSV"
+      "Cruzamento de camadas de fertilidade com curvas de nível",
+      "Identificação de manchas de erosão e declividade crítica",
+      "Prevenção de lixiviação de adubo em áreas com maior declive",
+      "Visão espacial em camadas transparentes sobre o satélite"
     ],
-    image: "assets/isa-mercado-atual.png",
-    alt: "Módulo de mercado e cotações da ISA"
+    image: "assets/solo-topografia.png",
+    alt: "Solo com curvas de nível e topografia na ISA"
+  },
+  novosolo: {
+    title: "5. Registro e Vínculo de Laudos Laboratoriais ao Talhão",
+    desc: "Conecte a estimativa científica aos resultados das análises químicas feitas no laboratório. Salve os dados de pH, argila e adubação diretamente dentro de cada talhão para acompanhar o histórico de calagem safra após safra.",
+    benefits: [
+      "Formulário direto para entrada de laudos laboratoriais reais",
+      "Vinculação dos resultados ao talhão selecionado",
+      "Acompanhamento histórico da evolução da fertilidade",
+      "Memória do campo preservada na sua conta na nuvem"
+    ],
+    image: "assets/salvar-dados-solo.png",
+    alt: "Formulário de cadastro de solo por talhão"
+  },
+  clima: {
+    title: "6. Clima, Chuva & Previsão Agrícola Horária",
+    desc: "Previsões meteorológicas calculadas pelo Open-Meteo para a coordenada exata da sua fazenda. Temperatura ao vivo, umidade do ar, vento, probabilidade de chuva hora a hora e alertas de janelas de aplicação de defensivos.",
+    benefits: [
+      "Condições atuais: temperatura, umidade, vento e precipitação",
+      "Previsão hora a hora para planejar janelas de pulverização sem deriva",
+      "Previsão estendida de 7 a 14 dias com mínimas e máximas",
+      "Alertas técnicos de umidade e orvalho foliar"
+    ],
+    image: "assets/clima.png",
+    alt: "Previsão de clima e chuva na ISA"
   },
   ia: {
-    title: "Assistente ISA · Triagem e IA Multimodal (Gemini Vision)",
-    desc: "A IA da ISA é um agente agronômico real: converse em linguagem natural ou faça upload de fotos de folhas lesionadas. O modelo analisa os padrões visuais da planta, cruza com a umidade e clima da região e entrega uma triagem preliminar com recomendações de MIP.",
+    title: "7. Assistente ISA · Triagem Fitossanitária com IA (Gemini)",
+    desc: "Inteligência artificial conversacional especializada em agronomia. Converse em linguagem natural sobre manejo, adubação e pragas ou envie fotos de folhas lesionadas para triagem preliminar com visão computacional.",
     benefits: [
-      "Triagem fitossanitária com visão computacional para detecção de pragas",
-      "Correlação automática com histórico de umidade e orvalho recente",
-      "Hipóteses de patógenos (Ferrugem, Mancha-alvo, Cercospora) e manejo integrado",
-      "Orientação técnica e segura com recomendação de validação agronômica"
+      "Triagem de doenças e pragas por foto com o Google Gemini Vision",
+      "Correlação do diagnóstico com o histórico climático recente do talhão",
+      "Hipóteses de patógenos (fungos, bactérias) e recomendações de MIP",
+      "Atendimento instantâneo no computador, celular e WhatsApp"
     ],
-    image: "assets/isa-chat-atual.png",
+    image: "assets/ia.png",
     alt: "Assistente de inteligência agronômica ISA"
+  },
+  personalizacao: {
+    title: "8. Personalização da Plataforma & Configurações",
+    desc: "Ajuste o sistema para a realidade da sua propriedade. Escolha o tema visual, configure o modo escuro, defina culturas prioritárias e mantenha seus registros sincronizados com total segurança e privacidade de dados.",
+    benefits: [
+      "Alternância fluida entre Modo Claro e Modo Escuro",
+      "Personalização de temas e preferências regionais",
+      "Sincronização com Supabase e autenticação Google",
+      "Privacidade total dos registros e desenhos de talhões"
+    ],
+    image: "assets/personalizacao.png",
+    alt: "Painel de configurações e personalização da ISA"
   }
 };
 
